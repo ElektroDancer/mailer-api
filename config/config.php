@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'Host' => '',
-    'Username' => '',
-    'Password' => '',
-    'Port' => 25,
-    'Mailadresse' => '',
-    'Name' => '',
+    'host' => '',
+    'username' => '',
+    'password' => '',
+    'port' => 25,
+    'mailadresse' => '',
+    'name' => '',
 ];

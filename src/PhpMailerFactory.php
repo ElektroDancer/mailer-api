@@ -22,10 +22,10 @@ class PhpMailerFactory
     {
         $this->phpMailer->isSMTP();
         $this->phpMailer->SMTPAuth = true;
-        $this->phpMailer->Host = $this->configuration->getHost();
-        $this->phpMailer->Port = $this->configuration->getPort();
-        $this->phpMailer->Username = $this->configuration->getUsername();
-        $this->phpMailer->Password = $this->configuration->getPassword();
+        $this->phpMailer->Host = $this->configuration->getHost()->asString();
+        $this->phpMailer->Port = $this->configuration->getPort()->asInt();
+        $this->phpMailer->Username = $this->configuration->getUsername()->asString();
+        $this->phpMailer->Password = $this->configuration->getPassword()->asString();
         $this->phpMailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         //$this->phpMailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 
