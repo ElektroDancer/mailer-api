@@ -1,0 +1,19 @@
+{
+  "name": "elektrodancer/mailer_api",
+  "description": "Messaging queuing example",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "require": {
+    "php": "^8",
+    "slim/slim": "^4",
+    "slim/psr7": "^1",
+    "phpmailer/phpmailer": "^6"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  }
+}
