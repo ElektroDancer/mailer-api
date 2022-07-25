@@ -32,8 +32,8 @@ class PhpMailerFactory
         $this->phpMailer->CharSet = PHPMailer::CHARSET_UTF8;
         $this->phpMailer->Encoding = PHPMailer::ENCODING_BASE64;
 
-        $this->phpMailer->setFrom('berichtsheft@flyeralarm.com', 'Berichtsheft');
-        $this->phpMailer->addReplyTo('berichtsheft@flyeralarm.com', 'Berichtsheft');
+        $this->phpMailer->setFrom('', '');
+        $this->phpMailer->addReplyTo('', '');
 
         $this->phpMailer->isHTML();
 
